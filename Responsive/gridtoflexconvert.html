@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial;
+        margin: 0;
+      }
+      .header {
+        background-color: #9933cc;
+        color: #ffffff;
+        padding: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    
+
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu li {
+        padding: 8px;
+        margin-bottom: 7px;
+        background-color: #33b5e5;
+        color: #ffffff;
+        text-align: left;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+
+      .menu li:hover {
+        background-color: #0099cc;
+      }
+
+      .side {
+        flex: 30%;
+        color: #ffffff;
+        padding: 15px;
+        text-align: center;
+        font-size: 14px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        display: table;
+      }
+      .main {
+        flex: 40%;
+        background-color: white;
+        padding: 20px;
+      }
+       .remain {
+        flex: 30%;
+        background-color: white;
+        padding: 20px;
+      }
+      .aside {
+        flex: 100%;
+        background-color: #33b5e5;
+        padding: 15px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 14px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+
+      .footer {
+        background-color: #9933cc;
+        color: #ffffff;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+      @media screen and (max-width: 700px) {
+        .row {
+          flex-direction: column;
+        }
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Abeokuta</h1>
+    </div>
+    <div class="row">
+      <div class="side">
+        <div class="menu">
+          <ul>
+            <li>The Flight</li>
+            <li>The City</li>
+            <li>The Rock</li>
+            <li>The Food</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main">
+        <h1>The City</h1>
+        <p>
+          Abeokuta is the capital city of Ogun State in southwest Nigeria. It is
+          situated on the east bank of the Ogun River, near a group of rocky
+          outcrops in a wooded savanna; 77 kilometres north of Lagos by railway,
+          or 130 kilometres by water. As of 2006, Abeokuta and the surrounding
+          area had a population of 449,088..
+        </p>
+        <img src="Image (10).jpg" />
+      </div>
+      <div class="remain">
+        <h1></h1>
+    </div>
+    <div class="aside">
+        <h2>What?</h2>
+        <p>Abeokuta is a city under the rock.</p>
+        <h2>Where?</h2>
+        <p>Abeokuta is a Yoruba Heritage site in Nigeria</p>
+        <h2>How?</h2>
+        <p>You can reach Abeokuta airport from all over the world.</p>
+    </div>
+  
+    
+    </div>
+    
+    </div>
+    <div class="footer">
+      <p>I am a footer</p>
+    </div>
+  </body>
+</html>
