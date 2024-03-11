@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Web Survey Form</title>
+    <style>
+      body {
+        background-color: rgb(125, 0, 0);
+       
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+      }
+
+      
+      header{
+        background-color: rgb(125, 0, 0);
+        background-image: url(ks\ _ogo.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100px;
+        color: white;
+        border: hidden 1px grey;
+
+        font-family: inherit;
+        font-size: 50px;
+        display: block;
+        max-width: 550px;
+        margin: 50px auto;
+      
+      }
+      h1 {
+        color: white;
+        font: inherit;
+        font-size: 30px;
+        text-align: center;
+        margin-left: 70px;
+       
+    
+      }
+
+      form {
+        background-color: white;
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 30px 20px;
+        box-shadow: 2px 5px 10px black;
+      }
+
+      .form-control {
+        text-align: left;
+        margin-bottom: 25px;
+      }
+
+      .form-control label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .form-control input,
+      .form-control select,
+      .form-control textarea {
+        border: solid 1px grey;
+        border-radius: 20px;
+        font-family: inherit;
+        padding: 10px;
+        display: block;
+        width: 95%;
+      }
+
+      .form-control input[type="radio"],
+      .form-control input[type="checkbox"] {
+        display: inline-block;
+        width: auto;
+      }
+
+      button {
+        background-color: rgb(125, 0, 0);
+        color: white;
+        border: solid 1px grey;
+        border-radius: 10px;
+        font-family: inherit;
+        font-size: 20px;
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+       <h1>KS Digital Innovations AEC Tech Bootcamp Survey</h1>
+    </header>
+   
+    <form id="form">
+      <div class="form-control">
+        <label for="name" id="label-name"> Name </label>
+
+        <input type="text" id="name" placeholder="Enter Your Name" />
+      </div>
+
+      <div class="form-control">
+        <label for="telnumber" id="label-telnumber"> Phone Number </label>
+
+        <input type="email" id="email" placeholder="Enter Your Email" />
+      </div>
+
+      <div class="form-control">
+        <label for="address" id="label-address"> Address </label>
+
+        <input type="text" id="age" placeholder="Enter Your Address" />
+      </div>
+
+      <div class="form-control">
+        <label for="email" id="label-email;"> Email </label>
+
+        <input type="email" id="email" placeholder="Enter Your Email" />
+      </div>
+
+      <div class="form-control">
+        <label for="role" id="label-role;"> Which Option Best Describes Your Current Occupation </label>
+
+        <select name="role" id="role">
+          <option value="student"></option>
+          <option value="student">Student</option>
+          <option value="intern">Intern</option>
+          <option value="professional">Professional</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      
+
+      <diV class="form-control">
+        <label>
+          Would you recommend KS Bootcamp
+        </label>
+
+        <label for="recommed-1">
+          <input type="radio" id="recommed-1" name="recommed"> Yes
+        </input>
+        </label>
+
+        <label for="recommed-2">
+				  <input type="radio" id="recommed-2" name="recommed">No
+				</input>
+			  </label>
+			<label for="recommed-3">
+				<input type="radio" id="recommed-3"
+					name="recommed">Maybe
+				</input>
+			</label>
+      </diV>
+
+      <div class="form-control">
+        <label>
+          Which Language are you proficient in<small> (check) all that apply</small>
+        </label>
+
+        <label for="check-1">
+          <input type="checkbox" id="check-1">Python</input>
+
+        </label>
+
+        <label for="check-2">
+          <input type="checkbox" id="check-2">JavaScript</input>
+        </label>
+
+        <label for="check-3">
+          <input type="checkbox" id="check-3">C++</input>
+        </label>
+
+        <label for="check-4">
+          <input type="checkbox" id="check-4">C#</input>
+        </label>
+
+        <label for="check-5">
+          <input type="checkbox" id="check-5">Django</input>
+        </label>
+
+        <label for="check-6">
+          <input type="checkbox" id="check-6">Ifc.js</input>
+        </label>
+      </div>
+
+      	<div class="form-control">
+			<label for="comment">
+				Any comments or suggestions
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Submit
+		</button>
+
+      
+    </form>
+  </body>
+</html>
